@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/planet-logo.png">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  
+  <title>The Planets</title>
+</head>
+<body>
+<div id="main-container">
+  <header id="header">
+    <div class="nav-logo">
+      <h3 class="antonio">The planets</h3>
+      <div class="burger" onclick="afficherNav('.nav-planet-list')"><img src="./assets/icon-hamburger.svg" alt="menu"></div>
+    </div>
+    <div class="grey-line"></div>
+    <div class="nav-planet-list">
+      <nav>
+        <ul id="main-nav" class="spartan">
+          <li class="li-neptune"><a href="./index.html">mercury</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-neptune"><a href="./venus.html">venus</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-neptune"><a href="./earth.html">earth</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-neptune"><a href="./mars.html">mars</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-neptune"><a href="./jupiter.html">jupiter</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-neptune"><a href="./saturn.html">saturn</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-neptune"><a href="./uranus.html">uranus</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-neptune"><a href="./neptune.html">neptune</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="line"><hr></div>
+  <div class="overview-phone">
+    <div class="button-phone btn-neptune over-phone">
+      <h3>overview</h3>
+    </div>
+    <div class="button-phone btn-neptune structure-phone">
+      <h3>Structure</h3>
+    </div>
+    <div class="button-phone btn-neptune surface-phone">
+      <h3>surface</h3>
+    </div>
+  </div>
+  <section id="planet">
+    <div class="left-side">
+      <div id="bg-planet" class="neptune">
+        <div class="general tilt" id="overview" data-tilt data-tilt-full-page-listening></div>
+        <div class="geo tilt" id="structure" data-tilt data-tilt-full-page-listening></div>
+        <div class="internal tilt"  id="geology" data-tilt data-tilt-full-page-listening></div>
+      </div>
+    </div>
+    <div class="right-side">
+
+      <div class="main-content">
+
+        <div class="text-content">
+
+          <h1 class="antonio">neptune</h1>
+          <div class="first info">
+              <p class="spartan">Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar 
+                System, it is the fourth-largest planet by diameter, the third-most-massive planet, 
+                and the densest giant planet. It is 17 times the mass of Earth, more massive than 
+                its near-twin Uranus.</p>
+              <a  href="https://en.wikipedia.org/wiki/Neptune" target="_blank">Source: <strong>Wikipedia</strong><ion-icon name="arrow-redo-outline"></ion-icon></a>
+          </div>
+
+          <div class="second info">
+              <p class="spartan">Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% 
+                to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. 
+                Increasing concentrations of methane, ammonia and water are found in the lower regions.</p>
+              <a href="https://en.wikipedia.org/wiki/Neptune#Internal_structure" target="_blank">Source: <strong>Wikipedia</strong><ion-icon name="arrow-redo-outline"></ion-icon></a>
+          </div>
+
+          <div class="third info">
+              <p class="spartan">Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also 
+                present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in 
+                the red and infrared portion of the spectrum.</p>
+              <a href="https://en.wikipedia.org/wiki/Neptune#Atmosphere" target="_blank">Source: <strong>Wikipedia</strong><ion-icon name="arrow-redo-outline"></ion-icon></a>
+          </div> 
+        </div>
+
+          <div class="overview">
+            <div class="button btn-neptune over">
+              <small>01</small>
+              <h3>overview</h3>
+            </div>
+            <div class="button btn-neptune structure">
+              <small>02</small>
+              <h3>internal structure</h3>
+            </div>
+            <div class="button btn-neptune surface">
+              <small>03</small>
+              <h3>surface geology</h3>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="information">
+    <div class="info-wrapper">
+      <div class="number">
+        <h4>ROTATION TIME</h4>
+        <h2><span class="rotationTimer">16</span>.0<span class="rotationTimer2">8</span> HOURS</h2>
+      </div>
+      <div class="number">
+        <h4>REVOLUTION TIME</h4>
+        <h2><span class="revolutionTimer">164</span>.<span class="revolutionTimer2">79</span> YEARS</h2>
+      </div>
+      <div class="number">
+        <h4>RADIUS</h4>
+        <h2><span class="radiusTimer">24</span>,<span class="radiusTimer2">622</span><span class="radiusTimer3"></span> KM</h2>
+      </div>
+      <div class="number">
+        <h4>AVERAGE TEMP.</h4>
+        <h2>-<span class="averageTimer">201</span>°C</h2>
+      </div>
+      
+    </div>
+  </section>
+</div>
+<script src="script/overview.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script/compteur.js"></script>
+<script src="./script/burgerNav.js"></script>
+<script src="./script/animation.js"></script>
+<script type="text/javascript" src="script/vanilla-tilt.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".tilt"), {
+  max: 25,
+  speed: 600
+  }); 
+</script>
+</body>
+</html>

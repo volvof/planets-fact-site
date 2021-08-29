@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/planet-logo.png">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  
+  <title>The Planets</title>
+</head>
+<body>
+<div id="main-container">
+  <header id="header">
+    <div class="nav-logo">
+      <h3 class="antonio">The planets</h3>
+      <div class="burger" onclick="afficherNav('.nav-planet-list')"><img src="./assets/icon-hamburger.svg" alt="menu"></div>
+    </div>
+    <div class="grey-line"></div>
+    <div class="nav-planet-list">
+      <nav>
+        <ul id="main-nav" class="spartan">
+          <li class="li-earth"><a href="./index.html">mercury</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-earth"><a href="./venus.html">venus</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-earth"><a href="./earth.html">earth</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-earth"><a href="./mars.html">mars</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-earth"><a href="./jupiter.html">jupiter</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-earth"><a href="./saturn.html">saturn</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-earth"><a href="./uranus.html">uranus</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-earth"><a href="./neptune.html">neptune</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="line"><hr></div>
+  <div class="overview-phone">
+    <div class="button-phone btn-earth over-phone">
+      <h3>overview</h3>
+    </div>
+    <div class="button-phone btn-earth structure-phone">
+      <h3>Structure</h3>
+    </div>
+    <div class="button-phone btn-earth surface-phone">
+      <h3>surface</h3>
+    </div>
+  </div>
+  <section id="planet">
+    <div class="left-side">
+      <div id="bg-planet" class="earth">
+        <div class="general tilt" id="overview" data-tilt data-tilt-full-page-listening></div>
+        <div class="geo tilt" id="structure" data-tilt data-tilt-full-page-listening></div>
+        <div class="internal tilt"  id="geology" data-tilt data-tilt-full-page-listening></div>
+      </div>
+    </div>
+    <div class="right-side">
+
+      <div class="main-content">
+
+        <div class="text-content">
+
+          <h1 class="antonio">earth</h1>
+          <div class="first info">
+              <p class="spartan">Third planet from the Sun and the only known planet to harbor life. 
+                About 29.2% of Earth's surface is land with remaining 70.8% is 
+                covered with water. Earth's distance from the Sun, physical properties 
+                and geological history have allowed life to evolve and thrive.</p>
+              <a  href="https://en.wikipedia.org/wiki/Earth" target="_blank">Source: <strong>Wikipedia</strong><ion-icon name="arrow-redo-outline"></ion-icon></a>
+          </div>
+
+          <div class="second info">
+              <p class="spartan">Earth's interior, like that of the other terrestrial planets, is divided 
+                into layers by their chemical or physical (rheological) properties. The 
+                outer layer is a chemically distinct silicate solid crust, which is 
+                underlain by a highly viscous solid mantle.</p>
+              <a href="https://en.wikipedia.org/wiki/Earth#Internal_structure" target="_blank">Source: <strong>Wikipedia</strong><ion-icon name="arrow-redo-outline"></ion-icon></a>
+          </div>
+
+          <div class="third info">
+              <p class="spartan">The total surface area of Earth is about 510 million km2. The continental 
+                crust consists of lower density material such as the igneous rocks granite 
+                and andesite. Less common is basalt, a denser volcanic rock that is the 
+                primary constituent of the ocean floors.</p>
+              <a href="https://en.wikipedia.org/wiki/Earth#Surface" target="_blank">Source: <strong>Wikipedia</strong><ion-icon name="arrow-redo-outline"></ion-icon></a>
+          </div> 
+        </div>
+
+          <div class="overview">
+            <div class="button btn-earth over">
+              <small>01</small>
+              <h3>overview</h3>
+            </div>
+            <div class="button btn-earth structure">
+              <small>02</small>
+              <h3>internal structure</h3>
+            </div>
+            <div class="button btn-earth surface">
+              <small>03</small>
+              <h3>surface geology</h3>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="information">
+    <div class="info-wrapper">
+      <div class="number">
+        <h4>ROTATION TIME</h4>
+        <h2><span class="rotationTimer">0</span>.<span class="rotationTimer2">99</span> DAYS</h2>
+      </div>
+      <div class="number">
+        <h4>REVOLUTION TIME</h4>
+        <h2><span class="revolutionTimer">365</span>.<span class="revolutionTimer2">26</span> DAYS</h2>
+      </div>
+      <div class="number">
+        <h4>RADIUS</h4>
+        <h2><span class="radiusTimer">6</span>,<span class="radiusTimer2">371</span><span class="radiusTimer3"></span> KM</h2>
+      </div>
+      <div class="number">
+        <h4>AVERAGE TEMP.</h4>
+        <h2><span class="averageTimer">16</span>°C</h2>
+      </div>
+      
+    </div>
+  </section>
+</div>
+<script src="script/overview.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script/compteur.js"></script>
+<script src="./script/burgerNav.js"></script>
+<script src="./script/animation.js"></script>
+<script type="text/javascript" src="script/vanilla-tilt.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".tilt"), {
+  max: 25,
+  speed: 600
+  }); 
+</script>
+</body>
+</html>

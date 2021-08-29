@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/planet-logo.png">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+  <title>The Planets</title>
+</head>
+<body>
+<div id="main-container">
+  <header id="header">
+    <div class="nav-logo">
+      <h3 class="antonio">The planets</h3>
+      <div class="burger" onclick="afficherNav('.nav-planet-list')"><img src="./assets/icon-hamburger.svg" alt="menu"></div>
+    </div>
+    <div class="grey-line"></div>
+    <div class="nav-planet-list">
+      <nav>
+        <ul id="main-nav" class="spartan">
+          <li id="swup" class="li-mercury transition-fade"><a href="./index.html">mercury</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-mercury"><a href="./venus.html">venus</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-mercury"><a href="./earth.html">earth</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-mercury"><a href="./mars.html">mars</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-mercury"><a href="./jupiter.html">jupiter</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-mercury"><a href="./saturn.html">saturn</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-mercury"><a href="./uranus.html">uranus</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-mercury"><a href="./neptune.html">neptune</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="line"><hr></div>
+  <div class="overview-phone">
+    <div class="button-phone btn-mercury over-phone">
+      <h3>overview</h3>
+    </div>
+    <div class="button-phone btn-mercury structure-phone">
+      <h3>Structure</h3>
+    </div>
+    <div class="button-phone btn-mercury surface-phone">
+      <h3>surface</h3>
+    </div>
+  </div>
+  <section id="planet">
+    <div class="left-side">
+      <div id="bg-planet" class="mercury">
+        <div class="general tilt" id="overview" data-tilt data-tilt-full-page-listening></div>
+        <div class="geo tilt" id="structure" data-tilt data-tilt-full-page-listening></div>
+        <div class="internal tilt"  id="geology" data-tilt data-tilt-full-page-listening></div>
+      </div>
+    </div>
+    <div class="right-side">
+
+      <div class="main-content">
+
+        <div class="text-content">
+
+          <h1 class="antonio">mercury</h1>
+          <div class="first info">
+              <p class="spartan">Mercury is the smallest planet in the Solar System and the closest 
+              to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
+              shortest of all the Sun's planets. Mercury is one of four terrestrial 
+              planets in the Solar System, and is a rocky body like Earth.</p>
+              <a  href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank">Source: <strong>Wikipedia</strong><ion-icon name="arrow-redo-outline"></ion-icon></a>
+          </div>
+
+          <div class="second info">
+              <p class="spartan">Mercury appears to have a solid silicate crust and mantle overlying a 
+                solid, iron sulfide outer core layer, a deeper liquid core layer, and 
+                a solid inner core. The planet's density is the second highest in the 
+                Solar System at 5.427 g/cm3 , only slightly less than Earth's density.</p>
+              <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" target="_blank">Source: <strong>Wikipedia</strong><ion-icon name="arrow-redo-outline"></ion-icon></a>
+          </div>
+
+          <div class="third info">
+              <p class="spartan">Mercury's surface is similar in appearance to that of the Moon, showing 
+                extensive mare-like plains and heavy cratering, indicating that it has 
+                been geologically inactive for billions of years. It is more heterogeneous 
+                than either Mars's or the Moon’s.</p>
+              <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" target="_blank">Source: <strong>Wikipedia</strong><ion-icon name="arrow-redo-outline"></ion-icon></a>
+          </div> 
+        </div>
+
+          <div class="overview">
+            <div class="button btn-mercury over">
+              <small>01</small>
+              <h3>overview</h3>
+            </div>
+            <div class="button btn-mercury structure">
+              <small>02</small>
+              <h3>internal structure</h3>
+            </div>
+            <div class="button btn-mercury surface">
+              <small>03</small>
+              <h3>surface geology</h3>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="information">
+    <div class="info-wrapper">
+      <div class="number">
+        <h4>ROTATION TIME</h4>
+        <h2><span class="rotationTimer">58</span>.<span class="rotationTimer2">6</span> DAYS</h2>
+      </div>
+      <div class="number">
+        <h4>REVOLUTION TIME</h4>
+        <h2><span class="revolutionTimer">87</span>.<span class="revolutionTimer2">97</span> DAYS</h2>
+      </div>
+      <div class="number">
+        <h4>RADIUS</h4>
+        <h2><span class="radiusTimer">2</span>,<span class="radiusTimer2">439</span>.<span class="radiusTimer3">7</span> KM</h2>
+      </div>
+      <div class="number">
+        <h4>AVERAGE TEMP.</h4>
+        <h2><span class="averageTimer">430</span>°C</h2>
+      </div>
+      
+    </div>
+  </section>
+</div>
+<script src="script/overview.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script/compteur.js"></script>
+<script src="./script/burgerNav.js"></script>
+<script src="./script/animation.js"></script>
+<script type="text/javascript" src="script/vanilla-tilt.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".tilt"), {
+  max: 25,
+  speed: 600
+  }); 
+</script>
+
+</body>
+</html>

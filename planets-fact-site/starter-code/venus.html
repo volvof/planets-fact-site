@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/planet-logo.png">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  
+  <title>The Planets</title>
+</head>
+<body>
+<div id="main-container">
+  <header id="header">
+    <div class="nav-logo">
+      <h3 class="antonio">The planets</h3>
+      <div class="burger" onclick="afficherNav('.nav-planet-list')"><img src="./assets/icon-hamburger.svg" alt="menu"></div>
+    </div>
+    <div class="grey-line"></div>
+    <div class="nav-planet-list">
+      <nav>
+        <ul id="main-nav" class="spartan">
+          <li class="li-venus"><a href="./index.html">mercury</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-venus"><a href="./venus.html">venus</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-venus"><a href="./earth.html">earth</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-venus"><a href="./mars.html">mars</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-venus"><a href="./jupiter.html">jupiter</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-venus"><a href="./saturn.html">saturn</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-venus"><a href="./uranus.html">uranus</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+          <div class="grey-line"></div>
+          <li class="li-venus"><a href="./neptune.html">neptune</a><ion-icon name="chevron-forward-outline"></ion-icon></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="line"><hr></div>
+  <div class="overview-phone">
+    <div class="button-phone btn-venus over-phone">
+      <h3>overview</h3>
+    </div>
+    <div class="button-phone btn-venus structure-phone">
+      <h3>Structure</h3>
+    </div>
+    <div class="button-phone btn-venus surface-phone">
+      <h3>surface</h3>
+    </div>
+  </div>
+  <section id="planet">
+    <div class="left-side">
+      <div id="bg-planet" class="venus">
+        <div class="general tilt" id="overview" data-tilt data-tilt-full-page-listening></div>
+        <div class="geo tilt" id="structure" data-tilt data-tilt-full-page-listening></div>
+        <div class="internal tilt"  id="geology" data-tilt data-tilt-full-page-listening></div>
+      </div>
+    </div>
+    <div class="right-side">
+
+      <div class="main-content">
+
+        <div class="text-content">
+
+          <h1 class="antonio">venus</h1>
+          <div class="first info">
+              <p class="spartan">Venus is the second planet from the Sun. It is named after the 
+                Roman goddess of love and beauty. As the brightest natural object 
+                in Earth's night sky after the Moon, Venus can cast shadows and 
+                can be, on rare occasions, visible to the naked eye in broad daylight.</p>
+              <a  href="https://en.wikipedia.org/wiki/Venus" target="_blank">Source: <strong>Wikipedia</strong><ion-icon name="arrow-redo-outline"></ion-icon></a>
+          </div>
+
+          <div class="second info">
+              <p class="spartan">The similarity in size and density between Venus and Earth suggests 
+                they share a similar internal structure: a core, mantle, and crust. 
+                Like that of Earth, Venusian core is most likely at least partially 
+                liquid because the two planets have been cooling at about the same rate.</p>
+              <a href="https://en.wikipedia.org/wiki/Venus#Internal_structure" target="_blank">Source: <strong>Wikipedia</strong><ion-icon name="arrow-redo-outline"></ion-icon></a>
+          </div>
+
+          <div class="third info">
+              <p class="spartan">Much of the Venusian surface appears to have been shaped by volcanic activity. 
+                Venus has several times as many volcanoes as Earth, and it has 167 large 
+                volcanoes that are over 100 km (60 mi) across. The only volcanic complex 
+                of this size on Earth is the Big Island of Hawaii.</p>
+              <a href="https://en.wikipedia.org/wiki/Venus#Surface_geology" target="_blank">Source: <strong>Wikipedia</strong><ion-icon name="arrow-redo-outline"></ion-icon></a>
+          </div> 
+        </div>
+
+          <div class="overview">
+            <div class="button btn-venus over">
+              <small>01</small>
+              <h3>overview</h3>
+            </div>
+            <div class="button btn-venus structure">
+              <small>02</small>
+              <h3>internal structure</h3>
+            </div>
+            <div class="button btn-venus surface">
+              <small>03</small>
+              <h3>surface geology</h3>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="information">
+    <div class="info-wrapper">
+      <div class="number">
+        <h4>ROTATION TIME</h4>
+        <h2><span class="rotationTimer">243</span><span class="rotationTimer2"></span> DAYS</h2>
+      </div>
+      <div class="number">
+        <h4>REVOLUTION TIME</h4>
+        <h2><span class="revolutionTimer">224</span>.<span class="revolutionTimer2">7</span> DAYS</h2>
+      </div>
+      <div class="number">
+        <h4>RADIUS</h4>
+        <h2><span class="radiusTimer">6</span>,0<span class="radiusTimer2">51</span>.<span class="radiusTimer3">8</span> KM</h2>
+      </div>
+      <div class="number">
+        <h4>AVERAGE TEMP.</h4>
+        <h2><span class="averageTimer">471</span>°C</h2>
+      </div>
+      
+    </div>
+  </section>
+</div>
+<script src="script/overview.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script/compteur.js"></script>
+<script src="./script/burgerNav.js"></script>
+<script src="./script/animation.js"></script>
+<script type="text/javascript" src="script/vanilla-tilt.js"></script>
+<script>
+  VanillaTilt.init(document.querySelectorAll(".tilt"), {
+  max: 25,
+  speed: 600
+  }); 
+</script>
+</body>
+</html>
